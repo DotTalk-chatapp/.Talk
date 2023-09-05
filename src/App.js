@@ -1,8 +1,9 @@
-import Textbox from './components/ui/Textbox';
-import Button from './components/ui/Button';
+import Textbox from './components/atoms/Textbox';
+import Button from './components/atoms/Button';
 
 import './App.css';
-import Card from './components/ui/Card';
+import Card from './components/atoms/Card';
+import Chatbox from './components/ui/chatbox/Chatbox';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         className="d-flex justify-content-center align-items-center "
         style={{ height: '90vh' }}
       >
-        <Card width="20rem" height="auto">
+        <Card width="32rem" height="auto">
           <p class="fs-4">Sign in</p>
           <Textbox
             label="Email address"
@@ -31,6 +32,34 @@ function App() {
 
             <Button text="Sign in" color="btn-dark" type="submit" />
           </div>
+
+          <Chatbox
+            imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"
+            alt="chatAvatarImage"
+            personName="Kavinda Madhuranga"
+            lastMessagedPerson="You"
+            lastMessage="Lorem ipsum qeteys..."
+            date="Monday"
+            lastMessageStatus="🕑"
+          />
+          <Chatbox
+            imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"
+            alt="chatAvatarImage"
+            personName="Kavinda Madhuranga"
+            lastMessagedPerson="You"
+            lastMessage="Lorem ipsum qeteys..."
+            date="Monday"
+            lastMessageStatus="🕑"
+          />
+          <Chatbox
+            imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"
+            alt="chatAvatarImage"
+            personName="Kavinda Madhuranga"
+            lastMessagedPerson="You"
+            lastMessage="Lorem ipsum qeteys..."
+            date="Monday"
+            lastMessageStatus="🕑"
+          />
         </Card>
       </div>
     </>

@@ -5,6 +5,7 @@ import './App.css';
 import Card from './components/atoms/Card';
 import Chatbox from './components/ui/chatbox/Chatbox';
 import ChatPanelHeader from './components/ui/chatPanelHeader/ChatPanelHeader';
+import InboxHeader from './components/ui/inboxHeader/InboxHeader';
 
 function App() {
   return (
@@ -34,7 +35,16 @@ function App() {
             <Button text="Sign in" color="btn-dark" type="submit" />
           </div>
 
-          <ChatPanelHeader />
+          <ChatPanelHeader
+            imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"
+            alt="chatAvatarImage"
+          />
+          <br />
+          <InboxHeader
+            imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"
+            alt="chatAvatarImage"
+          />
+          <br />
 
           <Chatbox
             imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"

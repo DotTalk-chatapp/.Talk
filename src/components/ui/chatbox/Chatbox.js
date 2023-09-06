@@ -1,4 +1,6 @@
 import classes from './Chatbox.module.css';
+import Badge from '@mui/material/Badge';
+import DoneAllIcon from '@mui/icons-material/DoneAll';
 
 const Chatbox = (props) => {
   return (
@@ -17,21 +19,24 @@ const Chatbox = (props) => {
             style={{ minWidth: '80px' }}
           >
             {''}
-            <img
-              src={props.imgUrl}
-              alt={props.alt}
-              style={{
-                width: '70px',
-                height: '70px',
-                borderRadius: '100%',
-              }}
-            />
+            <Badge color="success" overlap="circular" badgeContent="99+">
+              <img
+                src={props.imgUrl}
+                alt={props.alt}
+                style={{
+                  width: '70px',
+                  height: '70px',
+                  borderRadius: '100%',
+                }}
+              />
+            </Badge>
+
             {''}
           </div>
           <div className="flex-grow-1 col-5  texts d-flex align-items-center">
             <div className="row">
               <div className="row chatname ">
-                <span class=" fs-4 fw-semibold ">{props.personName}</span>
+                <span class=" fs-5 fw-semibold ">{props.personName}</span>
               </div>
               <div className="row name-lastMessage">
                 <span class="fw-normal">
@@ -48,9 +53,10 @@ const Chatbox = (props) => {
               <div className="row">
                 <span class=" fst-italic">{props.date}</span>
               </div>
-              <div className="row">
-                {' '}
-                <span class="fs-6">{props.lastMessageStatus}</span>
+              <div className="row mt-2">
+                <span class="fs-6 d-flex justify-content-center">
+                  <DoneAllIcon />
+                </span>
               </div>
             </div>
           </div>

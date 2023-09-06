@@ -4,6 +4,7 @@ import Button from './components/atoms/Button';
 import './App.css';
 import Card from './components/atoms/Card';
 import Chatbox from './components/ui/chatbox/Chatbox';
+import ChatPanelHeader from './components/ui/chatPanelHeader/ChatPanelHeader';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
 
             <Button text="Sign in" color="btn-dark" type="submit" />
           </div>
+
+          <ChatPanelHeader />
 
           <Chatbox
             imgUrl="https://imgv3.fotor.com/images/gallery/watercolor-female-avatar.jpg"

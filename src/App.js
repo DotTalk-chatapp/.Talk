@@ -6,15 +6,16 @@ import Card from './components/atoms/Card';
 import Chatbox from './components/ui/chatbox/Chatbox';
 import ChatPanelHeader from './components/ui/chatPanelHeader/ChatPanelHeader';
 import InboxHeader from './components/ui/inboxHeader/InboxHeader';
+import ReceiveMessage from './components/ui/message/ReceiveMmessage';
 
 function App() {
   return (
     <>
       <div
         className="d-flex justify-content-center align-items-center "
-        style={{ height: '90vh' }}
+        style={{ height: 'auto' }}
       >
-        <Card width="32rem" height="auto">
+        <Card width="45rem" height="auto">
           <p class="fs-4">Sign in</p>
           <Textbox
             label="Email address"
@@ -72,6 +73,40 @@ function App() {
             lastMessage="Lorem ipsum qeteys..."
             date="Monday"
             lastMessageStatus="🕑"
+          />
+
+          <ReceiveMessage
+            messagePosition="top"
+            msgType="resMsg"
+            mentioned={false}
+            message="Recently,Recently, I searched Recently, I searched for some videos
+              to learn MUI customization."
+          />
+          <ReceiveMessage
+            messagePosition="mid"
+            msgType="resMsg"
+            mentioned={true}
+            replyMessage="MUI customization. Suddenly, YouTube suggested your
+            channel to me. I learned so much from your videos, and it was
+            worth spending my time."
+            message="Recently,Recently, I searched Recently, I searched for some videos
+              to learn MUI customization. Suddenly, YouTube suggested your
+              channel to me. I learned so much from your videos, and it was
+              worth spending my time."
+          />
+          <ReceiveMessage
+            messagePosition="end"
+            msgType="resMsg"
+            mentioned={false}
+            message="spending my time."
+          />
+
+          <ReceiveMessage
+            messagePosition="single"
+            msgType="sendMsg"
+            mentioned={true}
+            replyMessage="MUI customization. Suddenly,"
+            message="Can you tell me more about the features of your new smartphone?"
           />
         </Card>
       </div>

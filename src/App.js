@@ -6,7 +6,7 @@ import Card from './components/atoms/Card';
 import Chatbox from './components/ui/chatbox/Chatbox';
 import ChatPanelHeader from './components/ui/chatPanelHeader/ChatPanelHeader';
 import InboxHeader from './components/ui/inboxHeader/InboxHeader';
-import ReceiveMessage from './components/ui/message/ReceiveMmessage';
+import Message from './components/ui/message/Message';
 
 function App() {
   return (
@@ -75,17 +75,22 @@ function App() {
             lastMessageStatus="🕑"
           />
 
-          <ReceiveMessage
+          <Message
+            senderName="Steve Rojers"
+            sendTime="20:56"
             messagePosition="top"
             msgType="resMsg"
             mentioned={false}
             message="Recently,Recently, I searched Recently, I searched for some videos
               to learn MUI customization."
           />
-          <ReceiveMessage
+          <Message
+            senderName="Steve Rojers"
+            sendTime="20:56"
             messagePosition="mid"
             msgType="resMsg"
             mentioned={true}
+            replyName="Kavinda"
             replyMessage="MUI customization. Suddenly, YouTube suggested your
             channel to me. I learned so much from your videos, and it was
             worth spending my time."
@@ -94,19 +99,43 @@ function App() {
               channel to me. I learned so much from your videos, and it was
               worth spending my time."
           />
-          <ReceiveMessage
+          <Message
+            senderName="Steve"
+            sendTime="20:56"
             messagePosition="end"
             msgType="resMsg"
             mentioned={false}
-            message="spending my time."
+            message="spe"
           />
 
-          <ReceiveMessage
-            messagePosition="single"
+          <Message
+            messageStatus="viewed"
+            messagePosition="top"
+            senderName="Steve"
+            sendTime="20:56"
             msgType="sendMsg"
             mentioned={true}
+            replyName="Nisal"
             replyMessage="MUI customization. Suddenly,"
-            message="Can you tell me more about the features of your new smartphone?"
+            message="Can you tell me more about the featur"
+          />
+          <Message
+            messageStatus="received"
+            messagePosition="mid"
+            senderName="Steve"
+            sendTime="20:56"
+            msgType="sendMsg"
+            mentioned={false}
+            message="Can you tell "
+          />
+          <Message
+            messageStatus="send"
+            messagePosition="end"
+            senderName="Steve"
+            sendTime="20:56"
+            msgType="sendMsg"
+            mentioned={false}
+            message="about the featur"
           />
         </Card>
       </div>

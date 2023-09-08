@@ -11,9 +11,9 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 const InboxHeader = (props) => {
   return (
     <>
-      <div className="container p-2 bg-light">
+      <div className="container p-2 bg-light ">
         <div class="d-flex align-items-center">
-          <div class="p-2 flex-grow-1  d-flex align-items-center">
+          <div class="p-2 flex-grow-1  d-flex align-items-center ">
             <div>
               <Tooltip title="View Profile">
                 <Avatar
@@ -24,7 +24,7 @@ const InboxHeader = (props) => {
               </Tooltip>
             </div>
             <div className="ms-3">
-              <span class=" fs-5 fw-semibold">Nisal </span>
+              <span class=" fs-6 fw-semibold">Nisal </span>
             </div>
           </div>
           <div class="p-2">

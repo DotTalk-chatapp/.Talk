@@ -6,7 +6,8 @@ const Chatbox = (props) => {
   return (
     <>
       <div
-        className={`container outer mt-2 mb-2  pe-3 ps-4 pt-2 pb-2 ${classes.outer} `}
+        className={`container outer mt-2 mb-22 pe-3 ps-4 pt-2 pb-2 ${classes.outer} `}
+        style={{ borderRadius: '15px' }}
       >
         <div
           className="row inner d-flex"
@@ -36,10 +37,10 @@ const Chatbox = (props) => {
           <div className="flex-grow-1 col-5  texts d-flex align-items-center">
             <div className="row">
               <div className="row chatname ">
-                <span class=" fs-5 fw-semibold ">{props.personName}</span>
+                <span class=" fs-6 fw-semibold ">{props.personName}</span>
               </div>
               <div className="row name-lastMessage">
-                <span class="fw-normal">
+                <span class="fw-light">
                   {`${props.lastMessagedPerson} : ${props.lastMessage}`}
                 </span>
               </div>

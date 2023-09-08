@@ -7,11 +7,22 @@ import Chatbox from './components/ui/chatbox/Chatbox';
 import ChatPanelHeader from './components/ui/chatPanelHeader/ChatPanelHeader';
 import InboxHeader from './components/ui/inboxHeader/InboxHeader';
 import Message from './components/ui/message/Message';
+import SendMessageBox from './components/ui/sendMessageBox/SendMessageBox';
+import WindowLayout from './components/layout/windowLayout';
 
 function App() {
   return (
     <>
-      <div
+      <WindowLayout></WindowLayout>
+    </>
+  );
+}
+
+export default App; /*
+
+/*
+
+<div
         className="d-flex justify-content-center align-items-center "
         style={{ height: 'auto' }}
       >
@@ -31,7 +42,16 @@ function App() {
             addCss="mb-3"
           />
           <div className="d-flex justify-content-end">
-            {/*<Button text="Cancel" color="btn-outline-dark" /> */}
+            {/*<Button text="Cancel" color="btn-outline-dark" /> 
+            
+
+            
+            
+            */ /*
+          
+          
+          
+          }
 
             <Button text="Sign in" color="btn-dark" type="submit" />
           </div>
@@ -137,10 +157,11 @@ function App() {
             mentioned={false}
             message="about the featur"
           />
+
+          <SendMessageBox />
         </Card>
       </div>
-    </>
-  );
-}
 
-export default App;
+
+
+*/

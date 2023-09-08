@@ -62,7 +62,7 @@ const ReceiveMessage = (props) => {
       >
         {/* Message container */}
         <div
-          className="flex-grow-0 message-outer p-3 bg-warning "
+          className="flex-grow-0 message-outer p-3 bg-light "
           style={{
             margin: messageStyles[props.msgType].widthMargin,
             borderRadius:
@@ -87,7 +87,7 @@ const ReceiveMessage = (props) => {
               <div
                 style={{
                   borderLeft: 'solid 4px #ff7f50',
-                  backgroundColor: '#eccc68',
+                  backgroundColor: '#ffc',
                   padding: '0.6rem',
                   borderRadius: '11px',
                   marginLeft: '-7px',
